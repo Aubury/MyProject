@@ -1,1 +1,6 @@
 D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\bin\Debug\MyProject.exe.config
+D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\bin\Debug\MyProject.exe
+D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\bin\Debug\MyProject.pdb
+D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\obj\Debug\MyProject.csprojResolveAssemblyReference.cache
+D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\obj\Debug\MyProject.exe
+D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\obj\Debug\MyProject.pdb
