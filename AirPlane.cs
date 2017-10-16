@@ -62,14 +62,25 @@ namespace MyProject
             if (Altitude - increment < 0) return Altitude = 0;
             return Altitude -= increment;
         }
-
         public int Forsage(int increment)
         {
-            if(increment * 2 < MaxAltitudeAuto)
-                return increment * 2; 
-            if (increment * 2 > MaxAltitudeAuto)
-                return Altitude = MaxAltitudeAuto;
+            if (increment * 2 < MaxAltitudeAuto) return Altitude = increment * 2;
+            else return Altitude = MaxAltitudeAuto;
         }
+      //static void Switch(string s)
+      //  {
+      //      switch(s)
+      //      {
+      //          case "A":
+      //              Climb(int increment);break;
+      //      }
+
+      //  }
+        //public int Forsage(int increment)
+        //{
+        //    if(increment*2 < MaxAltitudeAuto) return Altitude=increment * 2;
+        //    if (increment * 2 > MaxAltitudeAuto) return Altitude = MaxAltitudeAuto;
+        //} 
         public void SetAltitude(int targetAlitude)
         {
             int speed = 100;
@@ -78,6 +89,7 @@ namespace MyProject
               {
                 Climb(speed);
                 if (Altitude > MinAltitudeAuto) AutoPilotOn = true;
+                if (AutoPilotOn == true) Altitude = MaxAltitudeAuto;
                 Console.WriteLine("Altitude = {0}, Autopilot = {1}", Altitude, AutoPilotOn);
               }
             while (Altitude <= targetAlitude);
