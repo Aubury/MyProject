@@ -65,7 +65,10 @@ namespace MyProject
 
         public int Forsage(int increment)
         {
-            return increment * 2;
+            if(increment * 2 < MaxAltitudeAuto)
+                return increment * 2; 
+            if (increment * 2 > MaxAltitudeAuto)
+                return Altitude = MaxAltitudeAuto;
         }
         public void SetAltitude(int targetAlitude)
         {
