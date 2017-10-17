@@ -42,20 +42,9 @@ namespace MyProject
        
             Console.WriteLine(airplane.Altitude);
             airplane.SetAltitude(8000);
-
-            Console.WriteLine("Enter parameter: ");
-            do
-            {
-                string input = Console.ReadLine();
-                switch(input.ToLower())
-                {
-                    case "A": airplane.Climb(airplane.Altitude);break;
-                    case "F": airplane.Forsage(airplane.Altitude);break;
-                }
-                Console.WriteLine(input);
-                Console.WriteLine("Press any key");
-            }
-            while (Console.ReadKey().Key != ConsoleKey.Escape);
+            Console.WriteLine("===========================================================================================");
+            airplane.Switch();
+                
             Console.ReadLine();
         }
     }

@@ -25,6 +25,7 @@ namespace MyProject
         {
             MinAltitudeAuto=2000;
             MaxAltitudeAuto = 10000;
+           
         }
         public AirPlane(int capacity, float consuption, int altitudeIncrement)
         {
@@ -64,23 +65,59 @@ namespace MyProject
         }
         public int Forsage(int increment)
         {
-            if (increment * 2 < MaxAltitudeAuto) return Altitude = increment * 2;
-            else return Altitude = MaxAltitudeAuto;
+            if (increment * 2 > MaxAltitudeAuto) AutoPilotOn = false;
+                return Altitude = increment * 2;
+           
         }
-      //static void Switch(string s)
-      //  {
-      //      switch(s)
-      //      {
-      //          case "A":
-      //              Climb(int increment);break;
-      //      }
+      public void Switch()
+        {
+            do
+            {
+                Console.WriteLine();
+                Console.WriteLine("Enter parameter: ");
+                Console.WriteLine("If you want to lift the plane, press 'C'");
+                Console.WriteLine("If you want to enable forsage, press 'F'");
+                Console.WriteLine("If you want to enable autopilot, press 'A'");
+                Console.WriteLine();
+                string commandName = Console.ReadLine();
 
-      //  }
-        //public int Forsage(int increment)
-        //{
-        //    if(increment*2 < MaxAltitudeAuto) return Altitude=increment * 2;
-        //    if (increment * 2 > MaxAltitudeAuto) return Altitude = MaxAltitudeAuto;
-        //} 
+                switch (commandName)
+                {
+                    case "A":
+                        Console.WriteLine("Enable, press '1'\nSwitch off, press '0'.");
+                        int autopilot = Int32.Parse(Console.ReadLine());
+
+                        if (autopilot == 1 && Altitude > MinAltitudeAuto || autopilot == 1 && Altitude < MaxAltitudeAuto)  
+                        { AutoPilotOn = true; }
+
+                        if (autopilot == 1 && Altitude < MinAltitudeAuto || autopilot == 1 && Altitude > MaxAltitudeAuto)
+                        { Console.WriteLine("Sorry can not enable autopilot");AutoPilotOn = false; }
+
+                        if(autopilot == 0){ AutoPilotOn = false; }
+                        
+                        Console.WriteLine("Altitude = {0}, Autopilot = {1}", Altitude, AutoPilotOn);
+                        break;
+
+                    case "C":
+                        Console.WriteLine("Enter altitude settings: ");
+                        int height = Int32.Parse(Console.ReadLine());
+
+                        Altitude = height;
+
+                        if (Altitude < MinAltitudeAuto || Altitude > MaxAltitudeAuto  ) AutoPilotOn = false;
+                        Console.WriteLine("Altitude = {0}, Autopilot = {1}",Altitude, AutoPilotOn);
+                        break;
+
+                    case "F":
+                        Forsage(Altitude);
+                        if (Altitude < MinAltitudeAuto || Altitude > MaxAltitudeAuto) AutoPilotOn = false;
+                        Console.WriteLine("Altitude = {0}, Autopilot = {1}", Altitude, AutoPilotOn);
+                        break;
+                }
+
+            }
+            while (Console.ReadKey().Key != ConsoleKey.Escape);
+        }
         public void SetAltitude(int targetAlitude)
         {
             int speed = 100;
