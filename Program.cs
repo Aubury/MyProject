@@ -38,8 +38,10 @@ namespace MyProject
             AirPlane.MaxAltitudeAuto = 10000;
             AirPlane.MinAltitudeAuto = 2000;
 
-            AirPlane airplane = new AirPlane(140, 2.26F, 100);
-       
+            //AirPlane airplane = new AirPlane(140, 2.26F, 100);
+
+            AirPlane airplane = new New_Plane(140, 2.26F, 100);
+
             Console.WriteLine(airplane.Altitude);
             airplane.SetAltitude(8000);
             Console.WriteLine("===========================================================================================");

@@ -4,3 +4,9 @@ D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семе�
 D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\obj\Debug\MyProject.csprojResolveAssemblyReference.cache
 D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\obj\Debug\MyProject.exe
 D:\ПРОГРОММИРОВАНИЕ\ПРОГРАММИРОВАНИЕ\2_семестр\C# Sharp\Урок_2\MyProject\MyProject\obj\Debug\MyProject.pdb
+D:\Users\101-03\Desktop\Nat\New\bin\Debug\MyProject.exe.config
+D:\Users\101-03\Desktop\Nat\New\obj\Debug\MyProject.exe
+D:\Users\101-03\Desktop\Nat\New\obj\Debug\MyProject.pdb
+D:\Users\101-03\Desktop\Nat\New\bin\Debug\MyProject.exe
+D:\Users\101-03\Desktop\Nat\New\bin\Debug\MyProject.pdb
+D:\Users\101-03\Desktop\Nat\New\obj\Debug\MyProject.csprojResolveAssemblyReference.cache

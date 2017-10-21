@@ -2,7 +2,7 @@
 
 namespace MyProject
 {
-    class AirPlane
+   abstract class AirPlane
     {
 
         public int Capacity { get; private set; }
